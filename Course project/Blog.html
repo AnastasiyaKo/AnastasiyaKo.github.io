@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/Blog.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+</head>
+<body>
+<div class="header-menu">
+    <div>
+        <img src="./image/logo.png" alt="" class="logo-img">
+    </div>
+    <div class="menu">
+        <a href="Сalendar.html" target="_blank">Календарь</a>
+        <a href="Blog.html" target="_blank">Блог</a>
+        <a href="About_us.html" target="_blank">О нас</a>
+        <a href="Сourse_project.html" target="_blank">+375293043488</a>
+    </div>
+    <div class="menu-social-networking">
+        <a href="https://www.facebook.com/" target="_blank">
+            <span class="fa fa-facebook" aria-hidden="true"></span>
+        </a>
+        <a href="https://vk.com/" target="_blank">
+            <span class="fa fa-vk" aria-hidden="true"></span>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <span class="fa fa-instagram" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div>
+        <img src="image/ru.png" alt="" data-google-lang="ru" class="language__img">
+        <img src="image/en.png" alt="" data-google-lang="en" class="language__img">
+        <img src="image/de.png" alt="" data-google-lang="de" class="language__img">
+    </div>
+</div>
+
+<div class="header">
+    <div class="header-content">
+        <div class="calendar-link"><p> ECOJOURNEY.BELARUS </p> Блог об экотуризме</div>
+    </div>
+</div>
+<div class="blog-table">
+    <div class="blog">
+        <img src="./image/AelpRAHaY_U.jpg" alt="">
+        <div class="blog-content"><h2>Топ 5 мест для встречи весны</h2>
+            <p>Последнее дыхание зимы… Пожалуй это самое лучшее время для новых весенних планов.</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./image/151.jpg" alt="">
+        <div class="blog-content"><h2>Экотуризм в Беларуси</h2>
+            <p>Есть место на земном шаре, где живет и спокойно дышит природа. Здесь, среди тысяч рек и озер, среди
+                бескрайних болотных и лесных просторов, находят свой дом огромное множество живых организмов. </p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./image/devochka-priroda-svo.jpg" alt="">
+        <div class="blog-content"><h2>Не наш вам совет</h2>
+            <p>Экосистема Туризма делится с вами частичкой тепла, которое оставляет ваша обратная связь.</p>
+        </div>
+    </div>
+    <div class="blog">
+        <img src="./image/52.jpeg" alt="">
+        <div class="blog-content"><h2>5 вариантов золотых вечеров в Минске и его окрестностях</h2>
+            <p>Осень в этом году как никогда настойчива и прекрасна. И в такую расчудесную погоду, когда кругом осенняя
+                природа, сложно настроиться на рабочий лад. </p>
+        </div>
+    </div>
+
+</div>
+<div class="button-content">
+<button class="add-content" > Загрузить ещё ...</button>
+</div>
+<div class="contact">
+    <h2>Останемся на связи? <br>
+        Подписаться на рассылку экотуров и статей</h2>
+    <input type="email" id="email" placeholder="Ваш Email">
+    <label for="email"> подписаться</label>
+</div>
+<script>
+    const googleTranslateConfig = {
+        lang: "ru",
+    };
+
+    function TranslateInit() {
+
+        let code = TranslateGetCode();
+        $('[data-google-lang="' + code + '"]').addClass('language__img_active');
+
+        if (code == googleTranslateConfig.lang) {
+            TranslateClearCookie();
+        }
+
+        new google.translate.TranslateElement({
+            pageLanguage: googleTranslateConfig.lang,
+        });
+
+
+        $('[data-google-lang]').click(function () {
+            TranslateSetCookie($(this).attr("data-google-lang"))
+            // Перезагружаем страницу
+            window.location.reload();
+        });
+    }
+
+    function TranslateGetCode() {
+        let lang = ($.cookie('googtrans') != undefined && $.cookie('googtrans') != "null") ? $.cookie('googtrans') : googleTranslateConfig.lang;
+        return lang.substr(-2);
+    }
+
+    function TranslateClearCookie() {
+        $.cookie('googtrans', null);
+        $.cookie("googtrans", null, {
+            domain: "." + document.domain,
+        });
+    }
+
+    function TranslateSetCookie(code) {
+        $.cookie('googtrans', "/auto/" + code);
+        $.cookie("googtrans", "/auto/" + code, {
+            domain: "." + document.domain,
+        });
+    }
+</script>
+</body>
+</html>

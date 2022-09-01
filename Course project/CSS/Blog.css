@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+.header {
+    background: linear-gradient(rgba(85, 55, 21, 0.50), rgba(0, 0, 0, 0.70)), url("../image/Nature___Forest_Lich.jpg");
+
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.header-menu {
+    background-color: rgb(87, 65, 40, .4);
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-around;
+    z-index: 50;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.logo-img {
+    height: 80px;
+}
+
+.header-content {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.header-content a {
+    color: white;
+}
+
+.calendar-link {
+    margin-bottom: 50px;
+}
+
+
+
+
+.text-content h2 {
+    text-align: center;
+}
+
+.blog img {
+    max-width: 340px;
+}
+
+.blog-table {
+    display: grid;
+    grid-template-columns: repeat(1, 800px);
+    grid-template-rows: repeat(4, 300px);
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.blog {
+    display: flex;
+    padding: 20px;
+    border-bottom: 2px solid grey;
+}
+
+.blog:hover {
+    cursor: pointer;
+}
+
+
+.calendar-link p {
+    font-size: 17px;
+}
+
+.blog-content {
+    padding-left: 30px;
+    font-size: 15px;
+
+}
+
+#email {
+    margin: 20px;
+    width: 300px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.contact label {
+    margin-top: 10px;
+    color: white;
+    background-color: #0fa515;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-content {
+    background-color: #553715;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #553715;
+    color: white;
+}
+.language {
+    position: fixed;
+    left: auto;
+}
+
+.language__img {
+    margin: 2px;
+    cursor: pointer;
+    opacity: .5;
+    height: 25px;
+}
+
+.language__img:hover,
+.language__img_active {
+    opacity: 1;
+}
+.skiptranslate {
+    display: none !important;
+}
+
+.translated-ltr{
+    margin-top: -40px !important;
+    position: static !important;
+}

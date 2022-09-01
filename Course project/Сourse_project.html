@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="chatbot/chatbot.css">
+    <script src="chatbot/fp2.js"></script>
+    <script src="chatbot/chatbot.js"></script>
+    <link rel="stylesheet" href="./CSS/Course_project.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+
+</head>
+
+<body>
+<div class="header-menu">
+    <div>
+        <img src="./image/logo.png" alt="" class="logo-img">
+    </div>
+    <div class="menu">
+        <a href="Сalendar.html" target="_blank">Календарь</a>
+        <a href="Blog.html" target="_blank">Блог</a>
+        <a href="About_us.html" target="_blank">О нас</a>
+        <a href="tel:+375293043488">+375293043488</a>
+    </div>
+    <div class="menu-social-networking">
+        <a href="https://www.facebook.com/" target="_blank">
+            <span class="fa fa-facebook" aria-hidden="true"></span>
+        </a>
+        <a href="https://vk.com/" target="_blank">
+            <span class="fa fa-vk" aria-hidden="true"></span>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <span class="fa fa-instagram" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div>
+        <img src="image/ru.png" alt="" data-google-lang="ru" class="language__img">
+        <img src="image/en.png" alt="" data-google-lang="en" class="language__img">
+        <img src="image/de.png" alt="" data-google-lang="de" class="language__img">
+    </div>
+
+</div>
+
+<div class="header">
+    <div class="header-content">
+        <div class="calendar-link">ДАТЫ ТУРОВ НА CЕНТЯБРЬ <br> - уже в календаре</div>
+        <a href="Сalendar.html" target="_blank">Календарь туров</a>
+    </div>
+    <div class="cursor">
+        <span class="fa fa-angle-down" aria-hidden="true"><a href="Сourse_project.html#down"></a></span>
+    </div>
+</div>
+<div class="content">
+    <div class="text-content">
+        <h2 id="down"> Туры </h2>
+        <p>В наших путешествиях мы выбираем только те места, которые точно заслуживают вашего внимания! Уникальная
+            природа, проверенная инфраструктура, интересные люди, традиции и легенды - всё это мы объединили в
+            нестандартные туры, которые с радостью преподносим вам!</p>
+    </div>
+
+</div>
+<div class="tours-table">
+    <div class="tour1">
+        <h3>Ледниковыми тропами </h3>
+        <p> Продолжительность: 2 дня <br>
+            Ближайшие даты: 20-21.08, 27-28.08, 3-4.09
+        </p>
+        <div class="view-tour"> Смотреть программу</div>
+    </div>
+    <div class="tour2">
+        <h3>Каяки+вело - активный экотур на 1 день </h3>
+        <p> Продолжительность: 1 день <br>
+            Ближайшие даты: 28.08, 10.09
+        </p>
+        <div class="view-tour"> Смотреть программу</div>
+    </div>
+    <div class="tour3">
+        <h3>Сплав на каяках по дикой реке </h3>
+        <p> Продолжительность: 1 день <br>
+            Ближайшие даты: 04.09, 11.09
+        </p>
+        <div class="view-tour"> Смотреть программу</div>
+    </div>
+    <div class="tour4">
+        <h3>Северные болота (Ельня + Березинский) </h3>
+        <p> Продолжительность: 2 дня <br>
+            Ближайшие даты: 24-25.09, 8-9.10, 22-23.10
+        </p>
+        <div class="view-tour"> Смотреть программу</div>
+    </div>
+    <div class="tour5">
+        <h3>Сплав по Ислочи - хранители реки </h3>
+        <p> Продолжительность: 2 дня <br>
+            Ближайшие даты: по запросу
+        </p>
+        <div class="view-tour"> Получить консультацию</div>
+    </div>
+    <div class="tour6"><h3> Медвежий угол </h3>
+        <p> Продолжительность: 2 дня <br>
+            Ближайшие даты: по запросу
+        </p>
+        <div class="view-tour"> Получить консультацию</div>
+    </div>
+    <div class="tour7">
+        <h3> Тур в заказник Выгонощанское </h3>
+        <p> Продолжительность: 2 дня <br>
+            Ближайшие даты: по запросу
+        </p>
+        <div class="view-tour"> Получить консультацию</div>
+    </div>
+    <div class="tour8">
+        <h3> След в след - путешествие в заснеженный лес </h3>
+        <p> Продолжительность: 1 день <br>
+            Ближайшие даты: пока не запланирован
+        </p>
+        <div class="view-tour"> Получить консультацию</div>
+    </div>
+</div>
+<div class="contact">
+    <h2>Останемся на связи? <br>
+        Подписаться на рассылку экотуров и статей</h2>
+    <input type="email" id="email" placeholder="Ваш Email">
+    <label for="email"> подписаться </label>
+</div>
+<div class="chatbot__btn">
+    <div class="chatbot__tooltip d-none">Есть вопрос?</div>
+</div>
+<script>
+
+    const configChatbot = {};
+
+    configChatbot.btn = '.chatbot__btn';
+
+    configChatbot.key = 'fingerprint';
+
+    configChatbot.replicas = {
+        bot: {
+            0: {
+                content: 'Привет! Мы рады приветствовать тебя у нас на сайте. Есть вопросы? Рады будем ответить!',
+                human: [0, 1]
+            },
+
+        },
+        human: {
+            0: {content: 'Привет!', bot: 1},
+            1: {content: 'У меня есть вопрос', bot: 2},
+
+        }
+    }
+
+    configChatbot.root = SimpleChatbot.createTemplate();
+
+    configChatbot.url = '/chatbot/chatbot.php';
+
+    let chatbot = new SimpleChatbot(configChatbot);
+
+    document.querySelector(configChatbot.btn).onclick = function (e) {
+        this.classList.add('d-none');
+        const $tooltip = this.querySelector('.chatbot__tooltip');
+        if ($tooltip) {
+            $tooltip.classList.add('d-none');
+        }
+        configChatbot.root.classList.toggle('chatbot_hidden');
+        chatbot.init();
+    };
+
+    let fingerprint = localStorage.getItem(configChatbot.key);
+    if (!fingerprint) {
+        Fingerprint2.get(function (components) {
+            fingerprint = Fingerprint2.x64hash128(components.map(function (pair) {
+                return pair.value
+            }).join(), 31)
+            localStorage.setItem(configChatbot.key, fingerprint)
+        });
+
+    }
+
+    const googleTranslateConfig = {
+        lang: "ru",
+    };
+
+    function TranslateInit() {
+
+        let code = TranslateGetCode();
+        $('[data-google-lang="' + code + '"]').addClass('language__img_active');
+
+        if (code == googleTranslateConfig.lang) {
+            TranslateClearCookie();
+        }
+
+        new google.translate.TranslateElement({
+            pageLanguage: googleTranslateConfig.lang,
+        });
+
+
+        $('[data-google-lang]').click(function () {
+            TranslateSetCookie($(this).attr("data-google-lang"))
+            // Перезагружаем страницу
+            window.location.reload();
+        });
+    }
+
+    function TranslateGetCode() {
+        let lang = ($.cookie('googtrans') != undefined && $.cookie('googtrans') != "null") ? $.cookie('googtrans') : googleTranslateConfig.lang;
+        return lang.substr(-2);
+    }
+
+    function TranslateClearCookie() {
+        $.cookie('googtrans', null);
+        $.cookie("googtrans", null, {
+            domain: "." + document.domain,
+        });
+    }
+
+    function TranslateSetCookie(code) {
+        $.cookie('googtrans', "/auto/" + code);
+        $.cookie("googtrans", "/auto/" + code, {
+            domain: "." + document.domain,
+        });
+    }
+</script>
+</body>
+</html>
